@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow-md);
+  background-color: var(--gray-800);
+  min-width: 260px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav > * + * {
+  margin-left: 0.5rem;
+}
+
+.header-nav_link-svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.header-nav_link {
+  color: var(--gray-600);
+  padding: 0.5rem 0.8rem;
+}
+.header-nav_link:hover {
+  color: var(--gray-700);
+}
+
+.header-nav_link--active {
+  background-color: var(--gray-900);
+}
